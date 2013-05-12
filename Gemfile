@@ -2,8 +2,16 @@ source 'http://ruby.taobao.org'
 
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.0.4'
+gem 'bcrypt-ruby', '3.0.1'
 
-group :development, :test do
+group :development do
+  gem 'sqlite3', '1.3.5'
+  gem 'rspec-rails', '2.11.0'
+  gem 'guard-rspec', '1.2.1'
+  gem 'annotate', '2.5.0'
+end
+
+group :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'
